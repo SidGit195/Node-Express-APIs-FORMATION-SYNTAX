@@ -3,19 +3,19 @@ const mongoose = require('mongoose');
 const productSchema = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        required: true
     },
     description: {
         type: String
     },
     stockLevel: {
         type: Number,
-        require: true,
+        required: true,
         min: 0
     },
     warehouseId: {
         type: Number,
-        require: true
+        required: true
     }
 });
 
